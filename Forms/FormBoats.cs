@@ -35,10 +35,17 @@ namespace RKIS_WorkTest.Forms
         {
             try
             {
-                Validate();
-                boatBindingSource.EndEdit();
-                boatBindingSource.ResetBindings(true);
-                modelEF.SaveChanges();
+               if(Validate())
+                {
+                    boatBindingSource.EndEdit();
+                    boatBindingSource.ResetBindings(true);
+                    modelEF.SaveChanges();
+                } else
+                {
+                    MessageBox.Show("Ошибка в веденных данные");
+                    return;
+                }
+
             }
             catch (Exception ex)
             {
@@ -56,6 +63,7 @@ namespace RKIS_WorkTest.Forms
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
+ 
             SaveData();
         }
 

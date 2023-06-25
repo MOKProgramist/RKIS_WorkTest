@@ -76,5 +76,10 @@ namespace RKIS_WorkTest.Forms
             formMain.Show();
             Hide();
         }
+
+        private void orderBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+            LoadDataOrder();
+        }
     }
 }

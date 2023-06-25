@@ -54,6 +54,15 @@
             this.boatBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.boatDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.basePriceTextBox = new System.Windows.Forms.TextBox();
+            this.boat_IDTextBox = new System.Windows.Forms.TextBox();
+            this.boatTypeTextBox = new System.Windows.Forms.TextBox();
+            this.colourTextBox = new System.Windows.Forms.TextBox();
+            this.mastCheckBox = new System.Windows.Forms.CheckBox();
+            this.modelTextBox = new System.Windows.Forms.TextBox();
+            this.numberOfRowersTextBox = new System.Windows.Forms.TextBox();
+            this.vATTextBox = new System.Windows.Forms.TextBox();
+            this.woodTextBox = new System.Windows.Forms.TextBox();
             this.boatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,15 +73,6 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.basePriceTextBox = new System.Windows.Forms.TextBox();
-            this.boat_IDTextBox = new System.Windows.Forms.TextBox();
-            this.boatTypeTextBox = new System.Windows.Forms.TextBox();
-            this.colourTextBox = new System.Windows.Forms.TextBox();
-            this.mastCheckBox = new System.Windows.Forms.CheckBox();
-            this.modelTextBox = new System.Windows.Forms.TextBox();
-            this.numberOfRowersTextBox = new System.Windows.Forms.TextBox();
-            this.vATTextBox = new System.Windows.Forms.TextBox();
-            this.woodTextBox = new System.Windows.Forms.TextBox();
             basePriceLabel = new System.Windows.Forms.Label();
             boat_IDLabel = new System.Windows.Forms.Label();
             boatTypeLabel = new System.Windows.Forms.Label();
@@ -245,64 +245,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // boatBindingSource
-            // 
-            this.boatBindingSource.DataSource = typeof(RKIS_WorkTest.Models.Boat);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "boat_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "boat_ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Model";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Model";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "BoatType";
-            this.dataGridViewTextBoxColumn3.HeaderText = "BoatType";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "NumberOfRowers";
-            this.dataGridViewTextBoxColumn4.HeaderText = "NumberOfRowers";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Mast";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Mast";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Colour";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Colour";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Wood";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Wood";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "BasePrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "BasePrice";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "VAT";
-            this.dataGridViewTextBoxColumn9.HeaderText = "VAT";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
             // basePriceLabel
             // 
             basePriceLabel.AutoSize = true;
@@ -457,6 +399,64 @@
             this.woodTextBox.Name = "woodTextBox";
             this.woodTextBox.Size = new System.Drawing.Size(104, 20);
             this.woodTextBox.TabIndex = 20;
+            // 
+            // boatBindingSource
+            // 
+            this.boatBindingSource.DataSource = typeof(RKIS_WorkTest.Models.Boat);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "boat_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "boat_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Model";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Model";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "BoatType";
+            this.dataGridViewTextBoxColumn3.HeaderText = "BoatType";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NumberOfRowers";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NumberOfRowers";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Mast";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Mast";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Colour";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Colour";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Wood";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Wood";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "BasePrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "BasePrice";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "VAT";
+            this.dataGridViewTextBoxColumn9.HeaderText = "VAT";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // FormBoats
             // 
